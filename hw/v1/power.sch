@@ -496,19 +496,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 5350 7800 5300
 $Comp
-L power:GND #PWR?
-U 1 1 5F585E6C
-P 7800 5350
-AR Path="/5F585E6C" Ref="#PWR?"  Part="1" 
-AR Path="/5F017F08/5F585E6C" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 7800 5100 50  0001 C CNN
-F 1 "GND" H 7805 5177 50  0000 C CNN
-F 2 "" H 7800 5350 50  0001 C CNN
-F 3 "" H 7800 5350 50  0001 C CNN
-	1    7800 5350
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5F585E66
 P 7550 5300
@@ -704,19 +691,6 @@ F 3 "~" H 8250 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5F980B77
-P 8250 5900
-AR Path="/5F980B77" Ref="#PWR?"  Part="1" 
-AR Path="/5F017F08/5F980B77" Ref="#PWR0157"  Part="1" 
-F 0 "#PWR0157" H 8250 5650 50  0001 C CNN
-F 1 "GND" H 8255 5727 50  0000 C CNN
-F 2 "" H 8250 5900 50  0001 C CNN
-F 3 "" H 8250 5900 50  0001 C CNN
-	1    8250 5900
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:D_Zener D606
 U 1 1 5F981156
 P 8500 5350
@@ -782,4 +756,28 @@ Wire Wire Line
 Wire Wire Line
 	9750 4050 9200 4050
 Connection ~ 9200 4050
+Text Notes 6800 2600 0    50   ~ 0
+DNP resistors and use\nMCU's internal pull-ups?
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F17DF79
+P 7800 5350
+F 0 "#PWR?" H 7800 5150 50  0001 C CNN
+F 1 "GNDPWR" H 7804 5196 50  0000 C CNN
+F 2 "" H 7800 5300 50  0001 C CNN
+F 3 "" H 7800 5300 50  0001 C CNN
+	1    7800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F17E19E
+P 8250 5900
+F 0 "#PWR?" H 8250 5700 50  0001 C CNN
+F 1 "GNDPWR" H 8254 5746 50  0000 C CNN
+F 2 "" H 8250 5850 50  0001 C CNN
+F 3 "" H 8250 5850 50  0001 C CNN
+	1    8250 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

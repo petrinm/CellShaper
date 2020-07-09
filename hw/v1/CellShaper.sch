@@ -161,17 +161,6 @@ F 3 "~" H 1912 6950 50  0001 C CNN
 	1    1900 7000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 5E9F736E
-P 1900 7100
-F 0 "#PWR0114" H 1900 6850 50  0001 C CNN
-F 1 "GND" H 1905 6927 50  0000 C CNN
-F 2 "" H 1900 7100 50  0001 C CNN
-F 3 "" H 1900 7100 50  0001 C CNN
-	1    1900 7100
-	1    0    0    -1  
-$EndComp
 Text Notes 2300 7350 0    50   ~ 0
 Wakefield-vette 690 series heatsink
 Text Notes 5150 3950 0    50   ~ 0
@@ -486,7 +475,7 @@ U 1 1 5F917279
 P 10300 6850
 F 0 "LOGO1" H 10300 7125 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 10300 6625 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo_7.5x8mm_SilkScreen" H 10300 6850 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_7.5x8mm_Copper" H 10300 6850 50  0001 C CNN
 F 3 "~" H 10300 6850 50  0001 C CNN
 	1    10300 6850
 	1    0    0    -1  
@@ -500,6 +489,17 @@ F 1 "Logo_Open_Hardware_Small" H 10900 6625 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo_7.5x8mm_SilkScreen" H 10900 6850 50  0001 C CNN
 F 3 "~" H 10900 6850 50  0001 C CNN
 	1    10900 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0114
+U 1 1 5F3F0B4D
+P 1900 7100
+F 0 "#PWR0114" H 1900 6900 50  0001 C CNN
+F 1 "GNDPWR" H 1904 6946 50  0000 C CNN
+F 2 "" H 1900 7050 50  0001 C CNN
+F 3 "" H 1900 7050 50  0001 C CNN
+	1    1900 7100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
