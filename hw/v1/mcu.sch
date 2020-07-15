@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "CellShaper: MCU"
+Date "2020-07-15"
+Rev "v1"
+Comp "petrinm"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -290,43 +290,43 @@ F 3 "" H 4350 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 1300 4350 1400
-Text HLabel 2850 4100 0    50   Output ~ 0
+Text HLabel 5250 3700 2    50   Output ~ 0
 CELL_A_CHARGE
 Text HLabel 2850 4000 0    50   Output ~ 0
 CELL_B_CHARGE
-Text HLabel 5250 4000 2    50   Output ~ 0
+Text HLabel 5250 3300 2    50   Output ~ 0
 CELL_C_CHARGE
-Text HLabel 2850 3900 0    50   Output ~ 0
+Text HLabel 5250 3400 2    50   Output ~ 0
 CELL_D_CHARGE
-Text HLabel 2850 3500 0    50   Input ~ 0
-CELL_A_VOLTAGE
-Text HLabel 6750 1900 2    50   Input ~ 0
-CELL_B_VOLTAGE
-Text HLabel 5250 2000 2    50   Input ~ 0
-CELL_C_VOLTAGE
-Text HLabel 2850 3800 0    50   Input ~ 0
-CELL_D_VOLTAGE
-Text HLabel 2850 3600 0    50   Input ~ 0
-CELL_A_CHARGE_CURRENT
-Text HLabel 2850 2900 0    50   Input ~ 0
-CELL_B_CHARGE_CURRENT
-Text HLabel 5250 2200 2    50   Input ~ 0
-CELL_C_CHARGE_CURRENT
-Text HLabel 2850 3700 0    50   Input ~ 0
-CELL_D_CHARGE_CURRENT
-Text HLabel 5250 1600 2    50   Input ~ 0
-CELL_A_DISCHARGE_CURRENT
-Text HLabel 5250 1900 2    50   Input ~ 0
-CELL_B_DISCHARGE_CURRENT
-Text HLabel 5250 2100 2    50   Input ~ 0
-CELL_C_DISCHARGE_CURRENT
-Text HLabel 5250 3300 2    50   Input ~ 0
-CELL_D_DISCHARGE_CURRENT
 Text HLabel 2850 3300 0    50   Input ~ 0
-CELL_A_TEMPERATURE
+CELL_A_VOLTAGE
+Text HLabel 5250 2100 2    50   Input ~ 0
+CELL_B_VOLTAGE
+Text HLabel 2850 3700 0    50   Input ~ 0
+CELL_C_VOLTAGE
+Text HLabel 5250 4400 2    50   Input ~ 0
+CELL_D_VOLTAGE
 Text HLabel 2850 3400 0    50   Input ~ 0
+CELL_A_CHARGE_CURRENT
+Text HLabel 5250 2000 2    50   Input ~ 0
+CELL_B_CHARGE_CURRENT
+Text HLabel 5250 2300 2    50   Input ~ 0
+CELL_C_CHARGE_CURRENT
+Text HLabel 2850 3800 0    50   Input ~ 0
+CELL_D_CHARGE_CURRENT
+Text HLabel 2850 3500 0    50   Input ~ 0
+CELL_A_DISCHARGE_CURRENT
+Text HLabel 2850 3600 0    50   Input ~ 0
+CELL_B_DISCHARGE_CURRENT
+Text HLabel 5250 2200 2    50   Input ~ 0
+CELL_C_DISCHARGE_CURRENT
+Text HLabel 5250 3500 2    50   Input ~ 0
+CELL_D_DISCHARGE_CURRENT
+Text HLabel 5250 1600 2    50   Input ~ 0
+CELL_A_TEMPERATURE
+Text HLabel 5250 1700 2    50   Input ~ 0
 CELL_B_TEMPERATURE
-Text HLabel 5250 4600 2    50   Input ~ 0
+Text HLabel 5250 1800 2    50   Input ~ 0
 CELL_C_TEMPERATURE
 Text HLabel 2850 3100 0    50   Output ~ 0
 CELL_A_CHARGE_LED
@@ -336,7 +336,7 @@ Text HLabel 2850 4300 0    50   Output ~ 0
 CELL_B_DISCHARGE_LED
 Text HLabel 2850 4200 0    50   Output ~ 0
 CELL_C_DISCHARGE_LED
-Text HLabel 5250 4700 2    50   Output ~ 0
+Text HLabel 2850 3900 0    50   Output ~ 0
 CELL_D_DISCHARGE_LED
 Text HLabel 5250 2800 2    50   BiDi ~ 0
 USB_DP
@@ -518,17 +518,6 @@ Wire Wire Line
 	1450 5800 1000 5800
 Wire Wire Line
 	4250 1350 4150 1350
-$Comp
-L MCU_ST_STM32F3:STM32F303RBTx U12
-U 1 1 5F27E0C0
-P 4050 3200
-F 0 "U12" H 3550 4950 50  0000 C CNN
-F 1 "STM32F303RBTx" H 3500 1450 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3450 1500 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 4050 3200 50  0001 C CNN
-	1    4050 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 1800 3350 1800
 Text Label 5250 3100 2    50   ~ 0
@@ -596,7 +585,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 2900 4750 2900
 Wire Wire Line
-	3100 2700 3350 2700
+	3100 2800 3350 2800
 $Comp
 L Device:Crystal_GND24_Small Y1
 U 1 1 5F34F5F7
@@ -608,7 +597,7 @@ F 3 "~" H 1600 2050 50  0001 C CNN
 	1    1600 2050
 	1    0    0    -1  
 $EndComp
-Text HLabel 5250 4800 2    50   Output ~ 0
+Text HLabel 2850 4100 0    50   Output ~ 0
 CELL_D_CHARGE_LED
 Text HLabel 2850 4500 0    50   Output ~ 0
 CELL_A_DISCHARGE_LED
@@ -651,7 +640,7 @@ F 3 "" H 2400 6800 50  0001 C CNN
 	1    2400 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 6000 2850 2    50   Input ~ 0
+Text HLabel 5250 4500 2    50   Input ~ 0
 CHARGE_VOLTAGE
 $Comp
 L power:GND #PWR?
@@ -877,13 +866,11 @@ Wire Wire Line
 	4000 6800 4900 6800
 Wire Wire Line
 	5150 6800 6150 6800
-Text Label 5700 1800 2    50   ~ 0
-HEATSINK_TEMPERATURE
-Text Label 5700 1700 2    50   ~ 0
+Text Label 5900 4700 2    50   ~ 0
 PCB_TEMPERATURE
 Text HLabel 5250 2400 2    50   Output ~ 0
 CELL_C_CHARGE_LED
-Text HLabel 5250 3700 2    50   Input ~ 0
+Text HLabel 5250 4000 2    50   Input ~ 0
 I2C_~INT
 Wire Wire Line
 	5250 3700 4750 3700
@@ -916,7 +903,7 @@ F 3 "" H 1600 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 2800 3100 2800
+	3350 2900 3100 2900
 Text Label 5250 2500 2    50   ~ 0
 TXD
 Text Label 5250 2600 2    50   ~ 0
@@ -925,9 +912,7 @@ Wire Wire Line
 	5250 2600 4750 2600
 Wire Wire Line
 	5250 1900 4750 1900
-Wire Wire Line
-	2850 2900 3350 2900
-Text HLabel 5250 3500 2    50   Input ~ 0
+Text HLabel 5250 1900 2    50   Input ~ 0
 CELL_D_TEMPERATURE
 Wire Wire Line
 	5250 3500 4750 3500
@@ -968,15 +953,13 @@ Wire Wire Line
 Wire Wire Line
 	5250 2000 4750 2000
 Wire Wire Line
-	5700 1800 4750 1800
+	5250 1800 4750 1800
 Wire Wire Line
 	5250 1600 4750 1600
 Wire Wire Line
-	5250 4600 4750 4600
+	5900 4700 4750 4700
 Wire Wire Line
-	5250 4700 4750 4700
-Wire Wire Line
-	5250 4800 4750 4800
+	5900 4800 4750 4800
 Text Notes 8800 850  0    118  ~ 0
 3.3V LDO
 $Comp
@@ -1268,7 +1251,7 @@ $EndComp
 Wire Wire Line
 	3950 1350 3950 1300
 Wire Wire Line
-	4750 1700 5700 1700
+	4750 1700 5250 1700
 $Comp
 L Device:C_Small C?
 U 1 1 5F3AA47D
@@ -1321,9 +1304,9 @@ F 3 "" H 1350 2300 50  0001 C CNN
 	1    1350 2300
 	1    0    0    -1  
 $EndComp
-Text Label 3100 2700 0    50   ~ 0
-X1
 Text Label 3100 2800 0    50   ~ 0
+X1
+Text Label 3100 2900 0    50   ~ 0
 X2
 Text Label 2000 2050 2    50   ~ 0
 X1
@@ -1518,9 +1501,9 @@ Wire Wire Line
 	2800 1650 2800 1600
 Wire Wire Line
 	2800 1600 3350 1600
-Text HLabel 6600 900  0    50   Output ~ 0
+Text HLabel 5250 4300 2    50   Output ~ 0
 EN_POWER
-Text HLabel 6150 4300 2    50   Output ~ 0
+Text HLabel 5250 4600 2    50   Output ~ 0
 EN_FAN
 $Comp
 L Jumper:SolderJumper_3_Open JP1
@@ -1576,4 +1559,36 @@ Wire Wire Line
 Connection ~ 7600 6050
 Wire Wire Line
 	7600 6050 7750 6050
+Wire Wire Line
+	3850 5000 3850 5050
+Wire Wire Line
+	3850 5050 3950 5050
+Connection ~ 3950 5050
+$Comp
+L MCU_ST_STM32F3:STM32F303RDTx U12
+U 1 1 5F1D5B55
+P 4050 3200
+F 0 "U12" H 3500 4950 50  0000 C CNN
+F 1 "STM32F303RDT6" H 3450 1450 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3450 1500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00118585.pdf" H 4050 3200 50  0001 C CNN
+	1    4050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2300 4750 2300
+Wire Wire Line
+	5250 4400 4750 4400
+Text Label 5900 4800 2    50   ~ 0
+HEATSINK_TEMPERATURE
+Wire Wire Line
+	5250 4500 4750 4500
+Wire Wire Line
+	5250 4300 4750 4300
+Wire Wire Line
+	5250 4600 4750 4600
+NoConn ~ 4750 3900
+NoConn ~ 3350 4700
+NoConn ~ 3350 4600
+NoConn ~ 3350 4800
 $EndSCHEMATC

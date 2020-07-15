@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "Cell Shaper: Power"
-Date ""
+Date "2020-07-15"
 Rev "v1"
 Comp "petrinm"
 Comment1 ""
@@ -294,8 +294,6 @@ Wire Wire Line
 	5650 2200 5650 2400
 Wire Wire Line
 	5950 2200 5950 2500
-Text Notes 8150 6700 2    50   ~ 0
-TODO: 4-pin Molex connector?
 $Comp
 L power:GND #PWR?
 U 1 1 5F5927CD
@@ -360,7 +358,7 @@ AR Path="/5F5927E8" Ref="R?"  Part="1"
 AR Path="/5F07E3EE/5F5927E8" Ref="R?"  Part="1" 
 AR Path="/5F017F08/5F5927E8" Ref="R112"  Part="1" 
 F 0 "R112" H 4920 6946 50  0000 L CNN
-F 1 "27k" H 4920 6855 50  0000 L CNN
+F 1 "22k" H 4920 6855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 6900 50  0001 C CNN
 F 3 "~" H 4850 6900 50  0001 C CNN
 	1    4850 6900
@@ -859,7 +857,7 @@ AR Path="/5F568799" Ref="R?"  Part="1"
 AR Path="/5F07E3EE/5F568799" Ref="R?"  Part="1" 
 AR Path="/5F017F08/5F568799" Ref="R109"  Part="1" 
 F 0 "R109" H 8430 5954 50  0000 R CNN
-F 1 "100" H 8430 6045 50  0000 R CNN
+F 1 "10k" H 8430 6045 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 6000 50  0001 C CNN
 F 3 "~" H 8500 6000 50  0001 C CNN
 	1    8500 6000
